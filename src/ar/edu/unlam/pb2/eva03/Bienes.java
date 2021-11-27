@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2.eva03;
 
-public class Bienes {
+public abstract class Bienes {
 
     private Boolean est;
 

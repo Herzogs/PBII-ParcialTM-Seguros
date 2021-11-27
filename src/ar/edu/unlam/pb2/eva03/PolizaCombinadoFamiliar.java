@@ -8,10 +8,12 @@ public class PolizaCombinadoFamiliar extends Poliza implements SegurosGenerales<
 
     private final Map<Persona,TipoDeBeneficiario> listaBeneficiarios;
     private Bienes bienAsegurado;
+    private Boolean accidente;
 
     public PolizaCombinadoFamiliar(Integer numero_de_poliza, Persona asegurado, Double suma_asegurada, Double prima) {
         super(numero_de_poliza,asegurado,suma_asegurada,prima);
         this.listaBeneficiarios = new HashMap<>();
+        this.accidente =false;
     }
 
     @Override
@@ -20,9 +22,10 @@ public class PolizaCombinadoFamiliar extends Poliza implements SegurosGenerales<
            this.listaBeneficiarios.put(p,tipo);
     }
 
+
     @Override
     public Integer getNumeroDePoliza() {
-        return null;
+        return super.getNroPoliza();
     }
 
     @Override
@@ -48,6 +51,6 @@ public class PolizaCombinadoFamiliar extends Poliza implements SegurosGenerales<
 
     @Override
     public Boolean tuvoAlgunAccidente() {
-        return null;
+        return this.accidente;
     }
 }
