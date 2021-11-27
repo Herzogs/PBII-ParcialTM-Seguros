@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2.eva03;
 
-public class Auto extends Bienes{
+public class Auto{
     private String marca;
     private String modelo;
     private Integer anio;

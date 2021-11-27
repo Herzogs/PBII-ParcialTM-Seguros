@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2.eva03;
 
-public class Vivienda extends Bienes{
+public class Vivienda{
 
     private String dir;
     private String loc;

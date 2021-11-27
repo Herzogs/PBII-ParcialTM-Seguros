@@ -7,7 +7,7 @@ import java.util.Map;
 public class PolizaCombinadoFamiliar extends Poliza implements SegurosGenerales<Vivienda>, SegurosDeVida{
 
     private final Map<Persona,TipoDeBeneficiario> listaBeneficiarios;
-    private Bienes bienAsegurado;
+    private Vivienda bienAsegurado;
     private Boolean accidente;
 
     public PolizaCombinadoFamiliar(Integer numero_de_poliza, Persona asegurado, Double suma_asegurada, Double prima) {
@@ -29,7 +29,7 @@ public class PolizaCombinadoFamiliar extends Poliza implements SegurosGenerales<
     }
 
     @Override
-    public void agregarBienAsegurado(Bienes bienAsegurado) {
+    public void agregarBienAsegurado(Vivienda bienAsegurado) {
         this.bienAsegurado = bienAsegurado;
     }
 

@@ -2,7 +2,7 @@ package ar.edu.unlam.pb2.eva03;
 
 public class PolizaDeAuto extends Poliza implements SegurosGenerales<Auto>{
 
-    private Bienes bienAsegurado;
+    private Auto bienAsegurado;
     private Boolean robado;
 
     public PolizaDeAuto(Integer nroPoliza, Persona beneficiario, Double suma, Double prima) {
@@ -11,7 +11,7 @@ public class PolizaDeAuto extends Poliza implements SegurosGenerales<Auto>{
     }
 
     @Override
-    public void agregarBienAsegurado(Bienes bienAsegurado) {
+    public void agregarBienAsegurado(Auto bienAsegurado) {
         this.bienAsegurado = bienAsegurado;
     }
 
